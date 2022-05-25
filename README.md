@@ -15,18 +15,32 @@
 <p align="center"><a href="https://apexcharts.com/vue-chart-demos/"><img src="https://apexcharts.com/media/apexcharts-banner.png"></a></p>
 
 ## Download and Installation
+This is approach to fix bugs like this: https://github.com/apexcharts/apexcharts.js/issues/1949
 
-##### Installing via npm
+##### How to build
 
 ```bash
-npm install --save apexcharts
-npm install --save vue3-apexcharts
+npm install
+npm run build
+npm pack
 ```
+
+Copy *.tgz archive into your project and add this line in your package.json. ensure to remove olds apexcharts & vue3-apexcharts installation.
+```js
+"vue3-apexcharts": "vue3-apexcharts-1.4.5.tgz"
+```
+
 
 If you're looking for Vue 2.x.x compatibile component, check-out <a href="https://github.com/apexcharts/vue-apexcharts">vue-apexcharts</a>
 
 ## Usage
 
+# App.vue
+```js
+import 'vue3-apexcharts/src/apexcharts.js-3.35.0/dist/apexcharts.css';
+```
+
+# main.ts or main.js
 ```js
 import VueApexCharts from "vue3-apexcharts";
 
@@ -50,7 +64,7 @@ export default {
 To provide a `$apexcharts` reference inside Vue instance
 
 ```ts
-import ApexCharts from 'apexcharts';
+import ApexCharts from "vue3-apexcharts/src/apexcharts.js-3.35.0/dist/apexcharts";
 
 app.config.globalProperties.$apexcharts = ApexCharts;
 
