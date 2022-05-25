@@ -2,3 +2,4 @@ node_modules
 public
 bin
 build
+src/apexcharts.js-3.35.0/*
