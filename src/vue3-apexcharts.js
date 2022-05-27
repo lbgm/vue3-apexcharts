@@ -12,9 +12,9 @@ import {
   toRefs
 } from "vue";
 
-import ApexCharts from "./apexcharts.js-3.35.0/dist/apexcharts";
+import ApexCharts from "./apexcharts.js-3.35.0/apexcharts";
 
-import './apexcharts.js-3.35.0/dist/apexcharts.css'
+import './apexcharts.js-3.35.0/apexcharts.css'
 
 // define all emitted events in order to better
 // document how the component should work

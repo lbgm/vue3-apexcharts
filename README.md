@@ -37,7 +37,7 @@ If you're looking for Vue 2.x.x compatibile component, check-out <a href="https:
 
 # App.vue
 ```js
-import 'vue3-apexcharts/src/apexcharts.js-3.35.0/dist/apexcharts.css';
+import 'vue3-apexcharts/src/apexcharts.js-3.35.0/apexcharts.css';
 ```
 
 # main.ts or main.js
@@ -64,7 +64,7 @@ export default {
 To provide a `$apexcharts` reference inside Vue instance
 
 ```ts
-import ApexCharts from "vue3-apexcharts/src/apexcharts.js-3.35.0/dist/apexcharts";
+import ApexCharts from "vue3-apexcharts/src/apexcharts.js-3.35.0/apexcharts";
 
 app.config.globalProperties.$apexcharts = ApexCharts;
 
